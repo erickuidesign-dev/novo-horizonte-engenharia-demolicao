@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <script>document.documentElement.classList.add('js')</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novo Horizonte — Engenharia &amp; Demolição</title>
+  <meta name="description" content="Demolição controlada, engenharia estrutural e gestão de resíduos. Precisão tectônica, telemetria sísmica e economia circular.">
+  <meta name="theme-color" content="#121416">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-1 -1 8 8'%3E%3Crect x='-1' y='-1' width='8' height='8' fill='%232EB872'/%3E%3Cpath d='M0 0H6V3H3V6H0Z' fill='%23121416'/%3E%3Cpath d='M6 6H3.75A2.25 2.25 0 0 1 6 3.75Z' fill='%23F4F5F3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" type="image/webp" href="assets/bg-hero-section.webp" media="(min-width: 769px)">
+  <link rel="preload" as="image" type="image/webp" href="assets/bg-hero-section-768.webp" media="(max-width: 768px)">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Símbolo reutilizável: bloco 6x6 menos o recorte 3x3; arco r = 2,25x com centro no vértice -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="nh-symbol" viewBox="0 0 6 6">
+      <path fill="currentColor" d="M0 0H6V3H3V6H0Z"/>
+      <path fill="#2EB872" d="M6 6H3.75A2.25 2.25 0 0 1 6 3.75Z"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ LOADING ============ -->
+  <!-- Reproduz "Motion Apresentacao Logo.mp4": horizonte → massa → recorte → arco → assinatura.
+       Palco em coordenadas do vídeo (1920 × 1080), escalado para a tela via --pl-scale. -->
+  <div class="screen-loading" aria-hidden="true">
+    <div class="pl-line"></div>
+    <div class="pl-stage">
+      <div class="pl-symbol">
+        <svg viewBox="0 0 6 6">
+          <rect class="pl-block" width="6" height="6"/>
+          <rect class="pl-cut" x="3" y="3" width="3" height="3"/>
+          <path class="pl-arc" d="M6 6H3.75A2.25 2.25 0 0 1 6 3.75Z"/>
+        </svg>
+      </div>
+      <div class="pl-text">
+        <span class="pl-word"><span>Novo</span></span>
+        <span class="pl-word"><span>Horizonte</span></span>
+      </div>
+      <p class="pl-desc">Engenharia &amp; Demolição</p>
+    </div>
+  </div>
+
+  <!-- ============ MENU ============ -->
+  <header>
+    <nav aria-label="Principal">
+      <a class="lockup" href="#topo" aria-label="Novo Horizonte — início">
+        <svg class="symbol" aria-hidden="true"><use href="#nh-symbol"/></svg>
+        <span class="lockup-text">Novo<br>Horizonte<small>Engenharia &amp; Demolição</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#metodo">Método</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn-small" href="#contato">Fale conosco</a>
+    </nav>
+  </header>
+
+  <main id="topo">
+
+    <!-- ============ HERO ============ -->
+    <div class="div-hero">
+      <div class="bg-hero" aria-hidden="true">
+        <figure class="photo-bw hero-slide-1 is-active"></figure>
+        <figure class="photo-bw hero-slide-2"></figure>
+      </div>
+
+      <section class="container hero">
+        <div class="row">
+          <div class="grid-8">
+            <p class="label reveal">Novo Horizonte · Engenharia &amp; Demolição</p>
+            <h1 class="mt-2 reveal">Precisão tectônica em engenharia &amp; demolição.</h1>
+            <p class="mt-4 reveal">Demolir é o primeiro passo da construção. Desconstruímos estruturas com telemetria sísmica, segurança inviolável e economia circular — preparando a fundação para o que vem a seguir.</p>
+            <div class="mt-4 reveal"><a class="btn" href="#contato">Solicitar orçamento</a></div>
+            <div class="socials mt-5 reveal">
+              <a href="#" aria-label="Instagram"><span class="bg-icon-transparent"><svg class="nh-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><g stroke="currentColor"><path d="M3 3H21V21H3ZM12 16A4 4 0 1 1 16 12M17 7V7"/></g><g class="nh-acc"><path d="M16 12A4 4 0 0 1 12 16"/></g></svg></span></a>
+              <a href="#" aria-label="LinkedIn"><span class="bg-icon-transparent"><svg class="nh-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><g stroke="currentColor"><path d="M3 3H21V21H3Z"/></g><g class="nh-acc"><path d="M8 10V17M8 7V7M12 17V10M12 13A2.5 2.5 0 0 1 17 13V17"/></g></svg></span></a>
+              <a href="#" aria-label="WhatsApp"><span class="bg-icon-transparent"><svg class="nh-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><g stroke="currentColor"><path d="M3 12A9 9 0 1 1 12 21H3Z"/></g><g class="nh-acc"><path d="M9 8V11A4 4 0 0 0 13 15H16"/></g></svg></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="div-bar-photo" role="group" aria-label="Trocar imagem de fundo">
+        <button class="bar-photo is-active" type="button" aria-label="Imagem 1"></button>
+        <button class="bar-photo" type="button" aria-label="Imagem 2"></button>
+      </div>
+      <div class="hero-meta" aria-hidden="true">
+        DEMOLIÇÃO CONTROLADA<br>TELEMETRIA SÍSMICA ATIVA<br><span style="color:var(--nh-verde)">RESÍDUOS 94% RECICLADOS</span>
+      </div>
+    </div>
+
+    <!-- ============ SOBRE ============ -->
+    <div class="bg-raised" id="sobre">
+      <section class="container">
+        <div class="row">
+          <div class="grid-4">
+            <p class="label reveal">01 — Manifesto</p>
+            <h2 class="mt-1 reveal">Onde havia massa, surge espaço fértil.</h2>
+            <p class="mt-3 reveal">A demolição tradicional enxerga ruína e entulho. A Novo Horizonte enxerga renovação tectônica, precisão matemática e economia circular.</p>
+            <div class="mt-4 reveal"><a class="btn" href="#contato">Fale conosco</a></div>
+          </div>
+          <div class="grid-8">
+            <div class="stats reveal">
+              <div><p class="stat-label">Resíduos reciclados</p><h3 class="stat-value">94%</h3></div>
+              <div><p class="stat-label">Telemetria sísmica</p><h3 class="stat-value">24/7</h3></div>
+              <div><p class="stat-label">Ângulos de corte</p><h3 class="stat-value">90°</h3></div>
+              <div><p class="stat-label">Norma</p><h3 class="stat-value">NR-18</h3></div>
+            </div>
+            <p class="mt-5 reveal">Cada impacto é milimetricamente calculado através de telemetria sismográfica de ponta. Cada viga desconstruída respeita a integridade do entorno urbano e a segurança inviolável dos nossos operadores. Existimos para transformar obsolescência em terra fértil para novos marcos da engenharia brasileira. Não apagamos a história; preparamos as fundações para que o amanhã seja erguido com solidez.</p>
+          </div>
+        </div>
+
+        <div class="row cta-row reveal">
+          <div class="grid-1"><svg class="symbol" aria-hidden="true"><use href="#nh-symbol"/></svg></div>
+          <div class="grid-8"><h5>Quer entender como desconstruímos com precisão?</h5></div>
+          <div class="grid-3"><a class="btn-secondary" href="#servicos">Nossos serviços</a></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ CONCEITO + MÍDIA EM ESCALA ============ -->
+    <div class="bg-body">
+      <section class="container" style="padding-bottom:0">
+        <div class="text-center reveal">
+          <p class="label">02 — Conceito</p>
+          <h2 class="mt-1">Aqui, o amanhã começa<br><span class="color-gradient">pela fundação.</span></h2>
+        </div>
+      </section>
+      <div class="div-media" data-scale-media>
+        <img class="photo-bw" src="assets/bg-excavator.webp" alt="Escavadeiras em operação num canteiro de demolição" loading="lazy">
+      </div>
+
+      <section class="container phrases" aria-label="Pilares da marca">
+        <h2 class="text-center color-gradient">Precisão como linguagem.</h2>
+        <h2 class="text-center">Segurança inviolável.</h2>
+        <h2 class="text-center color-gradient">Economia circular.</h2>
+        <h2 class="text-center">Renovação tectônica.</h2>
+        <h2 class="text-center color-gradient">A força da transformação consciente.</h2>
+      </section>
+
+      <!-- Três tempos do símbolo -->
+      <section class="container" style="padding-top:0">
+        <div class="row">
+          <div class="grid-4"><p class="label reveal">02.1 — Três tempos</p></div>
+          <div class="grid-8"><h3 class="reveal">Remove-se um quarto da massa. No vazio, nasce o horizonte.</h3></div>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-art"><svg viewBox="0 0 6 6" aria-hidden="true"><path fill="currentColor" d="M0 0H6V6H0Z"/></svg></div>
+            <p class="label">A · Massa</p>
+            <h5>A estrutura obsoleta.</h5>
+            <p>Sólida, fechada, completa. O ponto de partida de toda obra de desconstrução.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-art"><svg viewBox="0 0 6 6" aria-hidden="true"><path fill="currentColor" d="M0 0H6V3H3V6H0Z"/><rect class="cut" x="3" y="3" width="3" height="3"/></svg></div>
+            <p class="label">B · Desconstrução</p>
+            <h5>Remoção calculada.</h5>
+            <p>Retira-se exatamente um quadrante — 25% da massa — sem dano ao entorno.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-art"><svg class="symbol" viewBox="0 0 6 6" aria-hidden="true"><path class="block" d="M0 0H6V3H3V6H0Z"/><path class="arc" d="M6 6H3.75A2.25 2.25 0 0 1 6 3.75Z"/></svg></div>
+            <p class="label">C · Horizonte</p>
+            <h5>O novo que será erguido.</h5>
+            <p>No vazio nasce um arco verde: o ciclo que se renova a cada fundação.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <div class="bg-body" id="servicos">
+      <section class="container" style="padding-top:0">
+        <div class="reveal">
+          <p class="label">03 — Serviços</p>
+          <h2 class="mt-1">O que desconstruímos.</h2>
+        </div>
+        <div class="services-row mt-5 reveal">
+          <article class="item-service span-4">
+            <img class="photo-bw" src="assets/bg-excavator.webp" alt="" loading="lazy">
+            <span class="num">03.1</span>
+            <div><h4>Demolição controlada</h4><p class="mt-1 p3">Desmonte mecanizado e manual com plano de ataque calculado e entorno protegido.</p></div>
+          </article>
+          <article class="item-service span-3">
+            <img class="photo-bw" src="assets/service-structural.webp" alt="" loading="lazy">
+            <span class="num">03.2</span>
+            <div><h4>Engenharia estrutural</h4><p class="mt-1 p3">Laudos, escoramentos e projetos de desmonte assinados por responsável técnico.</p></div>
+          </article>
+          <article class="item-service span-5">
+            <img class="photo-bw" src="assets/bg-aerial.webp" alt="" loading="lazy">
+            <span class="num">03.3</span>
+            <div><h4>Gestão de resíduos</h4><p class="mt-1 p3">Triagem na origem, reciclagem e destinação rastreada. Até 94% dos resíduos reaproveitados.</p></div>
+          </article>
+        </div>
+        <div class="services-row reveal">
+          <article class="item-service span-7">
+            <img class="photo-bw" src="assets/bg-crane-green.webp" alt="" loading="lazy">
+            <span class="num">03.4</span>
+            <div><h4>Telemetria sísmica</h4><p class="mt-1 p3">Monitoramento contínuo de vibração e recalque em edificações vizinhas, com relatórios em tempo real.</p></div>
+          </article>
+          <article class="item-service span-5">
+            <img class="photo-bw" src="assets/service-commercial.webp" alt="" loading="lazy">
+            <span class="num">03.5</span>
+            <div><h4>Licenciamento ambiental</h4><p class="mt-1 p3">Alvarás, PGRCC e licenças conduzidos do protocolo à entrega do laudo final.</p></div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ MÉTODO ============ -->
+    <div class="bg-body" id="metodo">
+      <section class="container" style="padding-top:0">
+        <div class="carousel-head reveal">
+          <div>
+            <p class="label">04 — Método</p>
+            <h2 class="mt-1">Da vistoria ao laudo.</h2>
+          </div>
+          <div class="carousel-nav">
+            <button class="prev" type="button" aria-label="Etapa anterior" disabled></button>
+            <button class="next" type="button" aria-label="Próxima etapa"></button>
+          </div>
+        </div>
+        <div class="carousel reveal" tabindex="0" aria-label="Etapas do método">
+          <article class="card"><span class="num">01</span><h5>Diagnóstico</h5><p>Vistoria técnica, levantamento estrutural e mapeamento de riscos do entorno.</p><span class="spec">Vistoria · Cadastro · ART</span></article>
+          <article class="card"><span class="num">02</span><h5>Projeto de desmonte</h5><p>Sequência de ataque, escoramentos e cronograma derivados do cálculo — nada é feito a olho.</p><span class="spec">Plano de ataque · Cronograma</span></article>
+          <article class="card"><span class="num">03</span><h5>Licenciamento</h5><p>Alvarás, plano de gerenciamento de resíduos e licenças ambientais em dia antes do primeiro impacto.</p><span class="spec">Alvará · PGRCC · Licenças</span></article>
+          <article class="card"><span class="num">04</span><h5>Execução monitorada</h5><p>Equipe com EPIs completos e telemetria sísmica ativa durante toda a operação.</p><span class="spec">NR-18 · Telemetria 24/7</span></article>
+          <article class="card"><span class="num">05</span><h5>Destinação de resíduos</h5><p>Triagem, reciclagem e transporte rastreado. O entulho volta à cadeia como matéria-prima.</p><span class="spec">Triagem · CTR · Reciclagem</span></article>
+          <article class="card"><span class="num">06</span><h5>Laudo e entrega</h5><p>Terreno limpo, relatório de telemetria e laudo final assinado. A fundação está pronta.</p><span class="spec">Laudo · As-built · Entrega</span></article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ FAQ ============ -->
+    <div class="bg-body" id="faq">
+      <section class="container" style="padding-top:0">
+        <div class="row">
+          <div class="grid-5 reveal">
+            <p class="label">05 — FAQ</p>
+            <h2 class="mt-1">Dúvidas?</h2>
+            <p class="mt-4">Reunimos as perguntas mais comuns sobre demolição, segurança e resíduos. Se não encontrar o que procura, fale direto com a nossa engenharia.</p>
+            <h5 class="color-gradient mt-4">Ainda tem perguntas? Vamos conversar.</h5>
+          </div>
+          <div class="grid-1 disappear"></div>
+          <div class="grid-6 accordion reveal">
+            <div>
+              <button class="accordion-button" type="button" aria-expanded="false"><h6>Que tipo de obra a Novo Horizonte executa?</h6></button>
+              <div class="accordion-content"><p>Demolições totais e parciais de edificações residenciais, comerciais e industriais, além de desmontes técnicos em áreas urbanas densas.</p></div>
+            </div>
+            <div>
+              <button class="accordion-button" type="button" aria-expanded="false"><h6>Como vocês protegem os imóveis vizinhos?</h6></button>
+              <div class="accordion-content"><p>Com vistoria cautelar prévia, escoramentos calculados e telemetria sísmica ativa, que monitora vibração e recalque durante toda a operação.</p></div>
+            </div>
+            <div>
+              <button class="accordion-button" type="button" aria-expanded="false"><h6>O que acontece com o entulho?</h6></button>
+              <div class="accordion-content"><p>Triamos os resíduos na origem e destinamos a recicladoras licenciadas, com rastreio por CTR. Nossa meta é reaproveitar até 94% do material.</p></div>
+            </div>
+            <div>
+              <button class="accordion-button" type="button" aria-expanded="false"><h6>Vocês cuidam das licenças e alvarás?</h6></button>
+              <div class="accordion-content"><p>Sim. Conduzimos alvará de demolição, plano de gerenciamento de resíduos e licenças ambientais, com responsável técnico registrado no CREA.</p></div>
+            </div>
+            <div>
+              <button class="accordion-button" type="button" aria-expanded="false"><h6>Quais normas de segurança vocês seguem?</h6></button>
+              <div class="accordion-content"><p>Operamos segundo a NR-18, com equipe treinada e EPIs completos. A segurança visível é parte do nosso método, não um detalhe.</p></div>
+            </div>
+            <div>
+              <button class="accordion-button" type="button" aria-expanded="false"><h6>O que recebo ao final da obra?</h6></button>
+              <div class="accordion-content"><p>Terreno limpo e nivelado, relatório de telemetria, comprovantes de destinação dos resíduos e laudo técnico final assinado.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ FAIXA ============ -->
+    <div class="strip-wrap" aria-hidden="true">
+      <div class="strip">
+        <h5>Aqui, o amanhã começa pela fundação.</h5><h5 class="color-gradient">A força da transformação consciente.</h5>
+        <h5>Aqui, o amanhã começa pela fundação.</h5><h5 class="color-gradient">A força da transformação consciente.</h5>
+        <h5>Aqui, o amanhã começa pela fundação.</h5><h5 class="color-gradient">A força da transformação consciente.</h5>
+        <h5>Aqui, o amanhã começa pela fundação.</h5><h5 class="color-gradient">A força da transformação consciente.</h5>
+      </div>
+    </div>
+
+    <!-- ============ CTA FINAL ============ -->
+    <div class="cta" id="contato">
+      <div class="bg-cta photo-bw" aria-hidden="true"></div>
+      <section class="container">
+        <div class="row">
+          <div class="grid-6">
+            <p class="label">06 — Contato</p>
+            <h2 class="mt-1">Pronto para preparar o terreno do seu próximo marco?</h2>
+            <p class="mt-4">Conte o que precisa ser desconstruído. Nossa engenharia responde com uma proposta técnica e um cronograma.</p>
+            <a class="contact-line" href="tel:+5500000000000">
+              <span class="bg-icon-transparent"><svg class="nh-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><g stroke="currentColor"><path d="M7 2H17V22H7ZM7 18H17"/></g><g class="nh-acc"><path d="M11 20H13"/></g></svg></span>
+              <h6>+55 (00) 0000-0000</h6>
+            </a>
+            <a class="contact-line" href="mailto:contato@novohorizonte.eng.br">
+              <span class="bg-icon-transparent"><svg class="nh-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><g stroke="currentColor"><path d="M2 5H22V19H2Z"/></g><g class="nh-acc"><path d="M2 5L12 13L22 5"/></g></svg></span>
+              <h6>contato@novohorizonte.eng.br</h6>
+            </a>
+            <a class="contact-line" href="https://novohorizonte.eng.br">
+              <span class="bg-icon-transparent"><svg class="nh-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><g stroke="currentColor"><path d="M2 18H22M5 22H19"/></g><g class="nh-acc"><path d="M6 18A6 6 0 0 1 18 18"/></g></svg></span>
+              <h6>novohorizonte.eng.br</h6>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="bg-deep">
+    <footer class="container">
+      <div class="row">
+        <div class="grid-5">
+          <a class="lockup" href="#topo" aria-label="Novo Horizonte — início">
+            <svg class="symbol" aria-hidden="true"><use href="#nh-symbol"/></svg>
+            <span class="lockup-text">Novo<br>Horizonte<small>Engenharia &amp; Demolição</small></span>
+          </a>
+          <span class="label">Endereço</span>
+          <p>Rua Exemplo, 000 — Cidade, UF</p>
+          <span class="label">Contato</span>
+          <p>+55 (00) 0000-0000</p>
+          <p>contato@novohorizonte.eng.br</p>
+        </div>
+        <div class="grid-4 disappear"></div>
+        <nav class="grid-3" aria-label="Rodapé">
+          <a class="link-footer" href="#topo"><h6>Início</h6></a>
+          <a class="link-footer" href="#sobre"><h6>Sobre</h6></a>
+          <a class="link-footer" href="#servicos"><h6>Serviços</h6></a>
+          <a class="link-footer" href="#metodo"><h6>Método</h6></a>
+          <a class="link-footer" href="#contato"><h6>Contato</h6></a>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <span>© <span data-year>2026</span> Novo Horizonte Engenharia &amp; Demolição</span>
+        <span>CNPJ 00.000.000/0001-00 · CREA 000000</span>
+        <span>ISO 9001 · ISO 14001 · NR-18</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
